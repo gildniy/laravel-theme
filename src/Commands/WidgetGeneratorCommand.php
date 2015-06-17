@@ -138,7 +138,7 @@ class WidgetGeneratorCommand extends Command {
                 $this->makeFile($container['widget'].'/'.$widgetClassTpl.'.blade.php', $this->getTemplate('widget.blade'));
                 break;
             case 'twig' :
-                $this->makeFile($container['widget'].'/'.$widgetClassTpl.'.twig.php', $this->getTemplate('widget.twig'));
+                $this->makeFile($container['widget'].'/'.$widgetClassTpl.'.twig', $this->getTemplate('widget.twig'));
                 break;
             default :
                 $this->makeFile($container['widget'].'/'.$widgetClassTpl.'.php', $this->getTemplate('widget'));
